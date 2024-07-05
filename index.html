@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador/Desencriptador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="./assets/Logo.svg" alt="">
+        </div>
+        <div class="content">
+            <section class="input">
+                <div class="input-area">
+                    <textarea id="input-text" cols="20" class="input-text" placeholder="Ingresa tu texto aqui"></textarea>
+                    <div class="info">
+                        <img src="./assets/zondicons--exclamation-solid.svg" alt="">
+                        <p>Solo letrasminusculas y sin acentos</p>
+                    </div>
+                </div>
+                <div class="options">
+                    <button id="encrypt-btn" class="btn">Encriptar</button>
+                    <button id="decrypt-btn" class="btn">Desencriptar</button>
+                </div>
+            </section>
+            <section class="output">
+                <div class="output-area">
+                    <textarea id="output-text" cols="20" readonly></textarea>
+                    <button id="copy-btn" class="btn">Copiar</button>
+                    <div class="output-muneco">
+                        <img class="muneco" src="./assets/Muñeco.svg" alt="">
+                        <h2>Ningún mensaje fue encontrado</h2>
+                        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
